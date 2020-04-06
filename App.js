@@ -50,8 +50,8 @@ function SettingsScreen({ navigation }) {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Settings screen</Text>
       <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Home')}
+        title="Go to About"
+        onPress={() => navigation.navigate('About')}
       />
     </View>
   );
@@ -66,7 +66,6 @@ export default function App() {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
-
             if (route.name === 'Home') {
               iconName = focused
                 ? 'ios-information-circle'
